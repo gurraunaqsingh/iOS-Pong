@@ -15,15 +15,21 @@ class GameScene: SKScene {
     var enemy = SKSpriteNode()
     var main = SKSpriteNode()
     
+    var topLbl = SKLabelNode()
+    var btmLbl = SKLabelNode()
+    
     var score = [Int]()
     
     func startGame(){
         score = [0,0]
+        
+        topLbl.text = "\(score[1])"
+        btmLbl.text = "\(score[0])"
     }
     
     func addScore(playerWhoWon : SKSpriteNode){
         
-        ball.position = CGPoint(dx: 0, dy: 0)
+        ball.position = CGPoint(x: 0, y: 0)
         ball.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
         
         if playerWhoWon == main{
@@ -33,11 +39,17 @@ class GameScene: SKScene {
             score[1] += 1
             ball.physicsBody?.applyImpulse((CGVector(dx: -20, dy: -20)))
         }
+        
+        topLbl.text = "\(score[1])"
+        btmLbl.text = "\(score[0])"
     }
     
     override func didMove(to view: SKView) {
         
         startGame()
+        
+        topLbl = self.childNode(withName: "topLabel") as! SKLabelNode
+        btmLbl = self.childNode(withName: "btmLabel") as! SKLabelNode
         
         ball = self.childNode(withName: "ball") as! SKSpriteNode
         enemy = self.childNode(withName: "enemy") as! SKSpriteNode

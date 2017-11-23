@@ -17,6 +17,7 @@
 		E772B0351FC6E73A00A046C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E772B0331FC6E73A00A046C6 /* LaunchScreen.storyboard */; };
 		E772B0401FC6E73B00A046C6 /* PongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772B03F1FC6E73B00A046C6 /* PongTests.swift */; };
 		E772B04B1FC6E73B00A046C6 /* PongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772B04A1FC6E73B00A046C6 /* PongUITests.swift */; };
+		E772B0591FC70BB400A046C6 /* LLPIXEL3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E772B0581FC70BB400A046C6 /* LLPIXEL3.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E772B0461FC6E73B00A046C6 /* PongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E772B04A1FC6E73B00A046C6 /* PongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongUITests.swift; sourceTree = "<group>"; };
 		E772B04C1FC6E73B00A046C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E772B0581FC70BB400A046C6 /* LLPIXEL3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LLPIXEL3.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		E772B0231FC6E73A00A046C6 /* Pong */ = {
 			isa = PBXGroup;
 			children = (
+				E772B0581FC70BB400A046C6 /* LLPIXEL3.ttf */,
 				E772B0241FC6E73A00A046C6 /* AppDelegate.swift */,
 				E772B0261FC6E73A00A046C6 /* GameScene.sks */,
 				E772B0281FC6E73A00A046C6 /* Actions.sks */,
@@ -242,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E772B0301FC6E73A00A046C6 /* Main.storyboard in Resources */,
+				E772B0591FC70BB400A046C6 /* LLPIXEL3.ttf in Resources */,
 				E772B0271FC6E73A00A046C6 /* GameScene.sks in Resources */,
 				E772B0321FC6E73A00A046C6 /* Assets.xcassets in Resources */,
 				E772B0351FC6E73A00A046C6 /* LaunchScreen.storyboard in Resources */,
